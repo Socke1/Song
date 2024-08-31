@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple MP3 Player</title>
+    <style>
+        body {
+            background-color: #C2D7CA; /* Lighter Green */
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .center-content {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .center-content img, .center-content audio {
+            display: block;
+            margin: 0 auto;
+        }
+        .download-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #28a745; /* Green */
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .download-button:hover {
+            background-color: #218838; /* Darker Green */
+        }
+    </style>
+</head>
+<body>
+    <div class="center-content">
+        <img src="test.png" alt="Cover Image" style="width:300px;height:auto;">
+        <audio controls>
+            <source src="song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <a href="song.mp3" download="song.mp3" class="download-button">Download MP3</a>
+    </div> 
+</body>
+</html>
